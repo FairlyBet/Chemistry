@@ -13,7 +13,7 @@ public class Reaction
 
     public Substance Result => _result.Clone() as Substance;
 
-    // public ReadOnlyList<Substance> Substances =>
+    public ReadOnlyList<Substance> Substances => _substances.Clone() as ReadOnlyList<Substance>;
 
     public Reaction(ReadOnlyList<Substance> substances, Substance result, float delaySeconds = 0)
     {
